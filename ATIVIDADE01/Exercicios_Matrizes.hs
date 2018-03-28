@@ -1,4 +1,6 @@
---Exercício 01: Faça uma função que gere uma matriz identidade de tamanho n.
+--Pedro Henrique Parreira
+
+--ExercÃ­cio 01: FaÃ§a uma funÃ§Ã£o que gere uma matriz identidade de tamanho n.
 
 -- a = n+1-i
 lista1 :: Integral a => a -> a -> [a]
@@ -12,7 +14,7 @@ funcao1 :: Integral a => a -> [[a]]
 funcao1 n = [lista1 (n+1-a) n | a <-[1..n]]
 
 
---Exercício 02: Faça uma função que calcule a soma da diagonal principal de uma matriz.   
+--ExercÃ­cio 02: FaÃ§a uma funÃ§Ã£o que calcule a soma da diagonal principal de uma matriz.   
 
 funcao2 :: Integral a => [[a]] -> a
 funcao2 (x:xs) = x !!0 + funcao2' 1 xs
@@ -20,7 +22,7 @@ funcao2 (x:xs) = x !!0 + funcao2' 1 xs
       funcao2' a [] = 0
       funcao2' a (x:xs) = (x !! a) + funcao2' (a+1) xs
      
---Exercício 03: Faça uma função que calcule a soma da diagonal secundária de uma matriz
+--ExercÃ­cio 03: FaÃ§a uma funÃ§Ã£o que calcule a soma da diagonal secundÃ¡ria de uma matriz
 funcao3 :: Integral a => [[a]] -> a
 funcao3 (x:xs) = x !!(length(x)-1) + funcao3' (length(x)-1) xs
     where
