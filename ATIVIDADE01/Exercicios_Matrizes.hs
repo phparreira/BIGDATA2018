@@ -1,7 +1,10 @@
 --Pedro Henrique Parreira
+-- Atividade 01 - Inteligência na Web e Big Data, 2018
+-- Exercícios Matrizes
+
+main :: IO()
 
 --Exercício 01: Faça uma função que gere uma matriz identidade de tamanho n.
-
 -- a = n+1-i
 lista1 :: Integral a => a -> a -> [a]
 lista1 a n = (elemento a n) : prox a (n-1)

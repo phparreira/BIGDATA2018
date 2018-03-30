@@ -1,7 +1,12 @@
--- Pedro Henrique Parreira
+--Pedro Henrique Parreira
+-- Atividade 01 - Inteligência na Web e Big Data, 2018
+-- Exercícios Funções
+
+
+
+main :: IO()
 
 --Exercício 01: Crie uma função ehTriangulo que determina se três lados x, y, z podem formar um triângulo.
-
 ehTriangulo :: Double -> Double -> Double -> Bool
 ehTriangulo a b c
     | abs(b-c) > a || a > (b*c) = False
@@ -10,7 +15,6 @@ ehTriangulo a b c
     | otherwise = True
 
 -- Exercício 02: Crie uma função tipoTriangulo que determina o tipo do triângulo formado pelos três lados x, y, z.
-
 tipoTriangulo :: Double -> Double -> Double -> String
 tipoTriangulo a b c
     | ehTriangulo a b c == False = "Nao eh Triangulo"
@@ -76,9 +80,9 @@ trianguloPascal i j = calcular i j
 
 main = do
 -- Teste Exercicio 1
-print( ehTriangulo 10 5 3 )
+print( ehTriangulo 4 4 3)
 -- Teste Exercicio 2
-print( tipoTriangulo 10 5 3 )
+print( tipoTriangulo 4 4 3)
 -- Teste Exercicio 3
 print(multEtiope 5 2)
 -- Teste Exercicio 4

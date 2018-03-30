@@ -1,22 +1,32 @@
 --Pedro Henrique Parreira
+-- Atividade 01 - Inteligência na Web e Big Data, 2018
+-- Exercícios Básicos
+
+
+main :: IO()
 
 -- Exercício 02: Faça uma função mult3 x que retorne True caso a entrada seja múltiplo de 3 e False caso contrário.
+mult3 :: Integer -> Bool
 mult3 x = ( x `rem` 3 == 0 ) 
           
 -- Exercício 03: Faça uma função mult5 x que retorne True caso a entrada seja múltiplo de 5 e False caso contrário.
+mult5 :: Integer -> Bool
 mult5 x = ( x `rem` 5 == 0 ) 
 
 -- Exercício 04: Faça uma função mult35 x que retorne True caso a entrada seja múltiplo de 3 e 5 e False caso contrário.
+mult35 :: Integer -> Bool
 mult35 x = ( x `rem` 3 == 0 && x `rem` 5 == 0 ) 
 
 -- Exercício 05: Faça um programa que retorne True caso a entrada seja menor que -1 ou (maior que 1 E múltiplo de 2), e False caso contrário.
+prog1 :: Integer -> Bool
 prog1 x = ( x < -1) || (x > 1 && x `rem` 2 == 0 )
 
 -- Exercício 06: Faça uma função que recebe um tipo Integer e retorna ele dividido por 2
-
-div2d x = x / 2
+div2d :: Integer -> Double
+div2d x = fromIntegral x / 2
 
 -- Exercício 07: Faa uma função que receba um ângulo a e retorne uma tupla contendo o seno da metade desse ângulo utilizando a identidade:
+prog2 :: (Double) -> (Double, Double)
 prog2 x  = (x1,x2)
     where
       x1 = calc
@@ -57,7 +67,7 @@ print(2*3+5)
 --2+2·3+1
 print(2+2*3+1)
 --3^4+5·^25+1
-print(3^4+5*(2^5)+1)
+print(3**4+5*(2**5)+1)
 
 -- Teste Exercicio 2
 print(mult3 36)

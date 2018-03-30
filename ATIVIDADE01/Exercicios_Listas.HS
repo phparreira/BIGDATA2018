@@ -1,7 +1,11 @@
--- Pedro Henrique Parreira
+--Pedro Henrique Parreira
+-- Atividade 01 - Inteligência na Web e Big Data, 2018
+-- Exercícios Listas
+
+main :: IO()
+
 
 --Exercício 01: Crie uma função divisivel20 x que retorna verdadeiro se x for divisível por todos os números de 1 a 20.
-
 listadiv = [11, 13, 14, 16, 17, 18, 19, 20]
 divisivel20 :: Integer -> Bool
 divisivel20 a = if length( filter (>0) $ map (\x -> a `mod`x) listadiv) >0 then False else True
